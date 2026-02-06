@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)file:///C:/Users/Usuario/OneDrive/Desktop/Nueva%20carpeta/Index.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para mi flaquita Nicole 💕</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #f3e8ff, #d6bfff);
+      color: #4b2c6f;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 50px 20px 30px;
+      animation: fadeDown 1s ease;
+    }
+
+    h1 {
+      font-size: 2.4em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-weight: normal;
+      font-size: 1.2em;
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .love-btn {
+      background: linear-gradient(135deg, #b57cff, #e6b3ff);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      cursor: pointer;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      margin: 20px 0;
+      transition: transform 0.2s ease;
+    }
+
+    .love-btn:hover {
+      transform: scale(1.05);
+    }
+
+    .message {
+      font-size: 1.1em;
+      margin-top: 10px;
+      display: none;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 15px;
+      margin: 12px 0;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+      animation: fadeUp 0.5s ease;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* GALERÍA */
+    .gallery {
+      margin: 40px 0;
+    }
+
+    .gallery h3 {
+      margin-bottom: 15px;
+    }
+
+    .photos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+.photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.photos img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photos img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+
+    footer {
+      padding: 30px 15px;
+      font-size: 0.9em;
+      opacity: 0.9;
+    }
+
+    .heart {
+      position: fixed;
+      bottom: -20px;
+      font-size: 20px;
+      animation: floatUp 6s infinite;
+      opacity: 0.6;
+    }
+
+    @keyframes floatUp {
+      from { transform: translateY(0); opacity: 0.6; }
+      to { transform: translateY(-120vh); opacity: 0; }
+    }
+  </style>
+<style type="text/css" id="operaUserStyle"></style></head>
+
+<body>
+
+<header>
+  <h1>💜 Para mi flaquita Nicole 💕</h1>
+  <h2>100 cosas que amo de ti (y no me alcanzan)</h2>
+
+  <button class="love-btn" onclick="showLove()">Te amo 💜</button>
+  <div class="message" id="loveMessage">
+    mi cielo, te amo con todo mi corazon gracias por ser esa persona que tanto le pedi a dios, y ahora te tengo a mi lado y no puedo estar mas agradecido por ello, te amo mi amor con toda mi alma. 🥹💜
+  </div>
+</header>
+
+<div class="container">
+
+ <div class="gallery">
+  <h3>📸 Nuestros momentos más lindos 💕</h3>
+
+  <div class="photos">
+    <img src="./index_files/1.jpeg" alt="una foto nuestra">
+    <img src="./index_files/2.jpeg" otra="" foto="" nuestra"="">
+    <img src="./index_files/3.jpeg" nuestra="" sonrisa="" juntos"="">
+    <img src="./index_files/4.jpeg" alt="un lindo recuerdo">
+  </div>
+</div>
+
+
+  <!-- LISTA -->
+<script>
+const cosas = [
+  "Tu sonrisa que me derrite",
+  "La forma en que dices mi nombre",
+  "Tus abrazos que se sienten como hogar",
+  "Tu risa tan única",
+  "Tu mirada cuando estás feliz",
+  "Tu ternura infinita",
+  "Tu forma tan bonita de amar",
+  "Cómo me haces sentir especial",
+  "Tu paciencia conmigo",
+  "Tu dulzura diaria",
+
+  "Tu apoyo constante",
+  "Tu energía tan linda",
+  "Tu sentido del humor",
+  "Tu forma de escucharme",
+  "Tu cariño sincero",
+  "Tu honestidad",
+  "Tu corazón tan puro",
+  "Tu forma de cuidarme",
+  "Tu manera de sorprenderme",
+  "Tu sensibilidad",
+
+  "Tu inteligencia",
+  "Tu creatividad",
+  "Tu voz",
+  "Tu mirada tierna",
+  "Tu manera de amar sin miedo",
+  "Tu apoyo en mis días malos",
+  "Tu sonrisa inesperada",
+  "Tu forma de estar conmigo",
+  "Tu comprensión",
+  "Tu forma de quererme",
+
+  "Tu ternura espontánea",
+  "Tu amor por los detalles",
+  "Tu compañía",
+  "Tu presencia",
+  "Tu manera de ser tú",
+  "Tu forma de hacerme reír",
+  "Tu amor sincero",
+  "Tu paciencia infinita",
+  "Tu dulzura natural",
+  "Tu apoyo incondicional",
+
+  "Tu forma de mirarme",
+  "Tu cariño diario",
+  "Tu energía bonita",
+  "Tu amor real",
+  "Tu manera de abrazar",
+  "Tu sonrisa contagiosa",
+  "Tu forma de amar la vida",
+  "Tu lado lindo",
+  "Tu ternura conmigo",
+  "Tu corazón hermoso",
+
+  "La forma en que me motivas",
+  "Cómo me haces sentir tranquilo",
+  "Tu forma de demostrar amor",
+  "Tu manera de preocuparte por mí",
+  "Tu risa cuando te da mucha gracia",
+  "Tu carita cuando estás concentrada",
+  "Tu manera de caminar",
+  "Tu forma de hablar",
+  "Tu voz cuando estás feliz",
+  "Tu voz cuando me cuidas",
+
+  "Tu forma de mirarme en silencio",
+  "Tu manera de amar sin condiciones",
+  "Cómo haces especiales los días normales",
+  "Tu forma de hacerme sentir suficiente",
+  "Tu cariño cuando menos lo espero",
+  "Tu manera de apoyarme",
+  "Tu forma de confiar en mí",
+  "Tu manera de abrazar el alma",
+  "Tu dulzura incluso en días difíciles",
+  "Tu forma de demostrar que te importo",
+
+  "Tu sonrisa cuando me ves",
+  "Tu manera de querer sin medida",
+  "Tu forma de hacerme sentir amado",
+  "Tu manera de cuidar mi corazón",
+  "Tu forma de iluminar mis días",
+  "Tu amor tan bonito",
+  "Tu manera de ser mi lugar seguro",
+  "Tu risa que mejora cualquier día",
+  "Tu forma de amar con todo",
+  "Tu manera de elegirme cada día",
+
+  "Tu paciencia cuando me equivoco",
+  "Tu apoyo cuando lo necesito",
+  "Tu forma de celebrar mis logros",
+  "Tu manera de calmarme",
+  "Tu forma de hacerme sentir orgulloso",
+  "Tu cariño sin pedir nada a cambio",
+  "Tu manera de mirarme con amor",
+  "Tu forma de acompañarme",
+  "Tu forma de demostrar que me amas",
+  "Tu manera de cuidar los detalles",
+
+  "Tu risa que se me queda grabada",
+  "Tu forma de abrazarme fuerte",
+  "Tu manera de entenderme sin palabras",
+  "Tu forma de hacerme sentir en paz",
+  "Tu manera de compartir tu amor",
+  "Tu forma de hacerme sentir afortunado",
+  "Tu manera de amar con el corazón",
+  "Tu forma de ser tan especial",
+  "Porque eres mi persona",
+  "Porque eres mi flaquita Nicole 💕"
+];
+
+    cosas.forEach((item, index) => {
+      document.write(`<div class="card">${index + 1}. ${item}</div>`);
+    });
+
+    function showLove() {
+      document.getElementById("loveMessage").style.display = "block";
+    }
+
+    // corazones flotando
+    setInterval(() => {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.innerHTML = "💜";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (4 + Math.random() * 3) + "s";
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 6000);
+    }, 700);
+  </script><div class="card">1. Tu sonrisa que me derrite</div><div class="card">2. La forma en que dices mi nombre</div><div class="card">3. Tus abrazos que se sienten como hogar</div><div class="card">4. Tu risa tan única</div><div class="card">5. Tu mirada cuando estás feliz</div><div class="card">6. Tu ternura infinita</div><div class="card">7. Tu forma tan bonita de amar</div><div class="card">8. Cómo me haces sentir especial</div><div class="card">9. Tu paciencia conmigo</div><div class="card">10. Tu dulzura diaria</div><div class="card">11. Tu apoyo constante</div><div class="card">12. Tu energía tan linda</div><div class="card">13. Tu sentido del humor</div><div class="card">14. Tu forma de escucharme</div><div class="card">15. Tu cariño sincero</div><div class="card">16. Tu honestidad</div><div class="card">17. Tu corazón tan puro</div><div class="card">18. Tu forma de cuidarme</div><div class="card">19. Tu manera de sorprenderme</div><div class="card">20. Tu sensibilidad</div><div class="card">21. Tu inteligencia</div><div class="card">22. Tu creatividad</div><div class="card">23. Tu voz</div><div class="card">24. Tu mirada tierna</div><div class="card">25. Tu manera de amar sin miedo</div><div class="card">26. Tu apoyo en mis días malos</div><div class="card">27. Tu sonrisa inesperada</div><div class="card">28. Tu forma de estar conmigo</div><div class="card">29. Tu comprensión</div><div class="card">30. Tu forma de quererme</div><div class="card">31. Tu ternura espontánea</div><div class="card">32. Tu amor por los detalles</div><div class="card">33. Tu compañía</div><div class="card">34. Tu presencia</div><div class="card">35. Tu manera de ser tú</div><div class="card">36. Tu forma de hacerme reír</div><div class="card">37. Tu amor sincero</div><div class="card">38. Tu paciencia infinita</div><div class="card">39. Tu dulzura natural</div><div class="card">40. Tu apoyo incondicional</div><div class="card">41. Tu forma de mirarme</div><div class="card">42. Tu cariño diario</div><div class="card">43. Tu energía bonita</div><div class="card">44. Tu amor real</div><div class="card">45. Tu manera de abrazar</div><div class="card">46. Tu sonrisa contagiosa</div><div class="card">47. Tu forma de amar la vida</div><div class="card">48. Tu lado lindo</div><div class="card">49. Tu ternura conmigo</div><div class="card">50. Tu corazón hermoso</div><div class="card">51. La forma en que me motivas</div><div class="card">52. Cómo me haces sentir tranquilo</div><div class="card">53. Tu forma de demostrar amor</div><div class="card">54. Tu manera de preocuparte por mí</div><div class="card">55. Tu risa cuando te da mucha gracia</div><div class="card">56. Tu carita cuando estás concentrada</div><div class="card">57. Tu manera de caminar</div><div class="card">58. Tu forma de hablar</div><div class="card">59. Tu voz cuando estás feliz</div><div class="card">60. Tu voz cuando me cuidas</div><div class="card">61. Tu forma de mirarme en silencio</div><div class="card">62. Tu manera de amar sin condiciones</div><div class="card">63. Cómo haces especiales los días normales</div><div class="card">64. Tu forma de hacerme sentir suficiente</div><div class="card">65. Tu cariño cuando menos lo espero</div><div class="card">66. Tu manera de apoyarme</div><div class="card">67. Tu forma de confiar en mí</div><div class="card">68. Tu manera de abrazar el alma</div><div class="card">69. Tu dulzura incluso en días difíciles</div><div class="card">70. Tu forma de demostrar que te importo</div><div class="card">71. Tu sonrisa cuando me ves</div><div class="card">72. Tu manera de querer sin medida</div><div class="card">73. Tu forma de hacerme sentir amado</div><div class="card">74. Tu manera de cuidar mi corazón</div><div class="card">75. Tu forma de iluminar mis días</div><div class="card">76. Tu amor tan bonito</div><div class="card">77. Tu manera de ser mi lugar seguro</div><div class="card">78. Tu risa que mejora cualquier día</div><div class="card">79. Tu forma de amar con todo</div><div class="card">80. Tu manera de elegirme cada día</div><div class="card">81. Tu paciencia cuando me equivoco</div><div class="card">82. Tu apoyo cuando lo necesito</div><div class="card">83. Tu forma de celebrar mis logros</div><div class="card">84. Tu manera de calmarme</div><div class="card">85. Tu forma de hacerme sentir orgulloso</div><div class="card">86. Tu cariño sin pedir nada a cambio</div><div class="card">87. Tu manera de mirarme con amor</div><div class="card">88. Tu forma de acompañarme</div><div class="card">89. Tu forma de demostrar que me amas</div><div class="card">90. Tu manera de cuidar los detalles</div><div class="card">91. Tu risa que se me queda grabada</div><div class="card">92. Tu forma de abrazarme fuerte</div><div class="card">93. Tu manera de entenderme sin palabras</div><div class="card">94. Tu forma de hacerme sentir en paz</div><div class="card">95. Tu manera de compartir tu amor</div><div class="card">96. Tu forma de hacerme sentir afortunado</div><div class="card">97. Tu manera de amar con el corazón</div><div class="card">98. Tu forma de ser tan especial</div><div class="card">99. Porque eres mi persona</div><div class="card">100. Porque eres mi flaquita Nicole 💕</div>
+
+</div>
+
+<footer>
+  Hecho con todo mi amor 💜 solo para ti, flaquita Nicole
+</footer>
+
+
+
+<div class="heart" style="left: 58.0769vw; animation-duration: 6.07967s;">💜</div><div class="heart" style="left: 0.455632vw; animation-duration: 5.7565s;">💜</div><div class="heart" style="left: 32.5209vw; animation-duration: 6.90888s;">💜</div><div class="heart" style="left: 47.7522vw; animation-duration: 5.06388s;">💜</div><div class="heart" style="left: 51.0395vw; animation-duration: 5.46696s;">💜</div><div class="heart" style="left: 2.28293vw; animation-duration: 4.00894s;">💜</div><div class="heart" style="left: 84.8768vw; animation-duration: 5.56123s;">💜</div><div class="heart" style="left: 67.1091vw; animation-duration: 6.38272s;">💜</div></body></html>
